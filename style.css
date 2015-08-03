@@ -1,0 +1,139 @@
+html {
+	background-color: #111;
+	box-sizing: border-box;
+	/*http://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #ccc;
+	color: aliceblue;
+	max-width: 800px;
+	margin: 0 auto; /*margin: 0 auto 0 auto;*/
+	/*text-shadow: 1px 0 0 black;*/
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 2em; /*1em = largeur d'un M majuscule dans la police. rem : root em, em pris à la racine*/
+	/*vw et vh : en proportion de la largeur et de la hauteur du viewport*/
+	border-radius: 10%;
+	border: 2px rgb(100,100,250) solid;
+	position: relative;
+}
+
+header {
+	height: 200px;
+	margin-bottom: 2em;
+	color: black;
+}
+
+
+/*Mise en page avec inline-block*/
+.main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(100,100,250);
+	height: auto;
+}
+
+.nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 1px 3px black;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	text-decoration: none;
+	display: block;
+	padding : 1em;
+	text-transform: uppercase;
+	color: black;
+}
+
+.nav-item:first-child a {
+	border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.nav-item a.active {
+	background-color: black;
+	color: white;
+}
+
+/***********************************/
+
+/*Mise en page avec float, clear et clearfix*/
+
+/***********************************/
+
+.title {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.description {
+	text-align: center;
+}
+
+.photo {
+	float: left;
+	margin-right: 2em;
+	max-width: 50%;
+	height: auto;
+	border-radius: 100%;
+	/*position: absolute;
+	top: 150px;
+	left: 20px;*/
+	transition: all 1s;
+	opacity: 1;
+}
+
+.photo:hover {
+	transform: rotate(576000deg);
+	border: 2px solid #111;
+	opacity: 0.5;
+}
+
+.s_title {
+	text-align: center;
+	text-decoration: underline;
+	color: black;
+}
+
+.section_cv {
+	padding: 2em;
+	margin-bottom: 2em;
+	border: 2px #111 groove;
+	background-color: rgb(175,175,250);
+	padding-top: 0;
+	/*border-radius: 50%;*/
+	/*padding-left: 7em;*/
+	font-size: 15px;
+	transition: all 0.25s;
+}
+
+.section_cv:hover {
+	font-size: 20px;
+	background-color: rgb(100,100,250);
+	color: white;
+}
+
+footer {
+	height: 200px;
+	margin-top: 2em;
+	color: black;
+	font-size: 12px;
+}
+
+@media(min-width: 500px) and (max-width: 600px){
+	body {
+		background-color: red;	
+	}
+}

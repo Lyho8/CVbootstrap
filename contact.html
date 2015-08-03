@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contacter Aurélien Pluot</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type ="text/css" href="perso.css">
+
+	<!-- Optional theme -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<!--<link rel="stylesheet" type ="text/css" href="style.css">-->
+</head>
+
+<body>
+	
+	<div class="container">
+
+		<nav class="navbar navbar-default navbar-custo">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand navbar-text-custo" href="index.html">CV Aurélien Pluot</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html" class="navbar-text-custo">Accueil</a></li>
+		        <li class="active"><a href="#" class="navbar-text-custo">Contact<span class="sr-only">(current)</span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="jumbotron jumbotron-custo">
+		  <h1 class="jumbotitle">Aurélien Pluot,<br /><small class="smol">pas fan de coloriage</small></h1>
+		  <p>Lorem ipsum dolor sit amet !</p>
+		  <p>
+		  	<a class="btn btn-danger btn-lg" href="index.html" role="button">
+		  		<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+		  		Accueil
+		  	</a>
+		  </p>
+		</div>
+
+		<main>
+
+			<form action="contact.php" method="get" class="well form-custo">
+
+				<!-- Tentative presque bien avec la classe input-group
+				<div class="input-group">
+					<label for="champ_nom" class="sr-only">Nom (*)</label>
+					<span class="input-group-addon" id="basic-addon1">Nom</span>
+					<input type="text" id="champ_nom" name="name" required class="form-control">
+					<p class="field_help"><abbr title="Exemple">Ex.</abbr> Dupont.</p>
+				</div>
+
+				<div class="input-group">
+					<label for="champ_prenom" class="sr-only">Prénom : </label>
+					<span class="input-group-addon" id="basic-addon1">Prénom</span>
+					<input type="text" id="champ_prenom" name="surname" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_email" class="sr-only">Mél : </label>
+					<span class="input-group-addon" id="basic-addon1">Mél</span>
+					<input type="email" id="champ_email" name="mail" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_site" class="sr-only">Site internet : </label>
+					<span class="input-group-addon" id="basic-addon1">Site internet</span>
+					<input type="url" id="champ_site" name="website" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_date" class="sr-only">Date de naissance : </label>
+					<span class="input-group-addon" id="basic-addon1">Date de naissance</span>
+					<input type="date" id="champ_date" name="birthdate" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_tel" class="sr-only">Téléphone : </label>
+					<span class="input-group-addon" id="basic-addon1">Téléphone</span>
+					<input type="tel" id="champ_tel" name="tel" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_couleur" class="sr-only">Couleur préférée : </label>
+					<span class="input-group-addon" id="basic-addon1">Couleur préférée</span>
+					<input type="color" id="champ_couleur" name="color" class="form-control">	
+				</div>
+
+				<div class="input-group">
+					<label class="sr-only">Sexe : </label>
+					<span class="input-group-addon" id="basic-addon1">Sexe</span>
+					<input type="radio" name="radiosexe" id="homme" name="sex" value="Homme" class="form-control">
+					<label for="homme" class="sr-only">Homme</label>
+					<input type="radio" name="radiosexe" id="femme" name="sex" value="Femme" class="form-control">
+					<label for="femme" class="sr-only">Femme</label>
+					<input type="radio" name="radiosexe" id="autre" name="sex" value="Autre" class="form-control">
+					<label for="autre" class="sr-only">Autre</label>
+					<input type="radio" name="radiosexe" id="ns" name="sex" value="Non spécifié" class="form-control">
+					<label for="ns" class="sr-only">Non spécifié</label>
+					<input type="radio" name="radiosexe" id="blah" name="sex" value="Indécis" class="form-control">
+					<label for="blah" class="sr-only">Indécis</label>	
+				</div>
+
+				<div class="input-group">
+					<label for="champ_contenu" class="sr-only">Message : </label>
+					<span class="input-group-addon" id="basic-addon1">Message</span>
+					<textarea name="contenu" id="champ_conteunu" cols="30" rows="10" placeholder="Votre message..." name="content" class="form-control"></textarea>
+				</div>
+				
+				<div class="field_valid">
+					<input type="submit" value="Envoyer">
+				</div>-->
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-xs-3">
+							<label for="champ_nom">Nom (*) <small><abbr title="Exemple">Ex.</abbr> Dupont.</small></label>
+						</div>
+						<div class="col-xs-9">
+							<input type="text" id="champ_nom" name="name" required class="form-control">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="champ_prenom">Prénom : </label>
+					<input type="text" id="champ_prenom" name="surname" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label for="champ_email">Mél : </label>
+					<input type="email" id="champ_email" name="mail" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label for="champ_site">Site internet : </label>
+					<input type="url" id="champ_site" name="website" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label for="champ_date">Date de naissance : </label>
+					<input type="date" id="champ_date" name="birthdate" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label for="champ_tel">Téléphone : </label>
+					<input type="tel" id="champ_tel" name="tel" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label for="champ_couleur">Couleur préférée : </label>
+					<input type="color" id="champ_couleur" name="color" class="form-control">	
+				</div>
+
+				<div class="form-group">
+					<label>Sexe : </label>
+					<div class="well">
+						<input type="radio" name="radiosexe" id="homme" name="sex" value="Homme">
+						<label for="homme">Homme</label>
+						<input type="radio" name="radiosexe" id="femme" name="sex" value="Femme">
+						<label for="femme">Femme</label>
+						<input type="radio" name="radiosexe" id="autre" name="sex" value="Autre">
+						<label for="autre">Autre</label>
+						<input type="radio" name="radiosexe" id="ns" name="sex" value="Non spécifié">
+						<label for="ns">Non spécifié</label>
+						<input type="radio" name="radiosexe" id="blah" name="sex" value="Indécis">
+						<label for="blah">Indécis</label>	
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="champ_contenu">Message : </label>
+					<textarea name="contenu" id="champ_conteunu" cols="30" rows="10" placeholder="Votre message..." name="content" class="form-control"></textarea>
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-send"> </span> Envoyer</button>
+				</div>
+
+			</form>
+
+		</main>
+
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
